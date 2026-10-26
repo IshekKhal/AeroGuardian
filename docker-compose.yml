@@ -1,0 +1,22 @@
+services:
+  aeroguardian:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aeroguardian:latest
+    container_name: aeroguardian-hud
+    restart: unless-stopped
+    ports:
+      - "8000:8000"          # Tactical HUD & Web Dashboard
+      - "14550:14550/udp"    # MAVLink 2.0 UDP GCS Socket (QGroundControl / Mission Planner)
+    environment:
+      - PYTHONUNBUFFERED=1
+      - GCS_PORT=14550
+      - HUD_PORT=8000
+    volumes:
+      - ./data/samples:/app/data/samples:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/status"]
+      interval: 15s
+      timeout: 5s
+      retries: 3

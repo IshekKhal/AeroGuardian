@@ -1,0 +1,56 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test & coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local cache & datasets
+data/raw/
+*.mp4
+*.MP4
+*.h264
+*.tar.gz
+*.zip
+!data/samples/
+data/samples/videos/flame_burn_sequence/
+data/samples/videos/flame2_*
+data/samples/videos/raw_*
+!data/samples/videos/flame_burn_optical_15s.mp4
+!data/samples/videos/flame_burn_thermal_15s.mp4
+
+# AWS & Secret credentials
+.env
+*.pem
+credentials.json
+

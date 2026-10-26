@@ -1,0 +1,22 @@
+{
+  "timestamp": 1792147086.4766579,
+  "opencv_version": "5.0.0",
+  "iterations": 100,
+  "throughput_fps": 21.05,
+  "end_to_end_latency_ms": {
+    "mean": 47.5,
+    "p50": 46.43,
+    "p95": 47.12,
+    "p99": 48.66
+  },
+  "component_latencies_ms": {
+    "cross_spectral_registration": 11.48,
+    "smoke_and_contrast_filter": 2.94,
+    "hazard_optical_flow": 33.08
+  },
+  "cloud_economics": {
+    "aws_graviton_cost_per_100k_frames_usd": 0.383,
+    "x86_baseline_cost_per_100k_frames_usd": 0.828,
+    "cloud_cost_reduction_percent": 53.7
+  }
+}
