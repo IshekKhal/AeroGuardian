@@ -5,13 +5,13 @@
 
 [![Tests](https://img.shields.io/badge/tests-26%2F26%20passing-brightgreen.svg)](tests/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-5.0.0--dev%20Core-blue.svg)](https://opencv.org)
-[![AWS](https://img.shields.io/badge/AWS-Graviton%20ARM64%20Live-orange.svg)](http://13.207.197.170:8000)
+[![AWS](https://img.shields.io/badge/AWS-Graviton%20ARM64%20Live-orange.svg)](http://43.204.139.37:8000)
 [![MAVLink](https://img.shields.io/badge/MAVLink-2.0%20UDP%3A14550-purple.svg)](src/flight/mavlink_interface.py)
 [![Dataset](https://img.shields.io/badge/Dataset-IEEE%20FLAME%202%20Authentic-red.svg)](data/samples/videos/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 > **Live Deployment**: Tactical Air-Surface Incident Console running on AWS Graviton (`t4g.medium`, ARM64, `ap-south-1`):  
-> [http://13.207.197.170:8000](http://13.207.197.170:8000)
+> [http://43.204.139.37:8000](http://43.204.139.37:8000)
 
 ![AeroGuardian Tactical Console](assets/aeroguardian_tactical_console.png)
 
